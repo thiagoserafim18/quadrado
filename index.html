@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class ="quadrado" id="quadrado">Entre</div>
+    <script>
+     const quadrado = document.getElementById('quadrado')
+     quadrado.addEventListener('mouseenter', () => {
+       if (!quadrado.classList.contains('clicado')){
+        quadrado.textContent = 'Entrou';
+       }
+     });  
+     quadrado.addEventListener('mouseleave', () => {
+        if (!quadrado.classList.contains('clicado')){
+         quadrado.textContent = 'Entre';
+        }
+    });
+    quadrado.addEventListener('click', () => {
+         quadrado.classList.contains('clicado');
+         quadrado.style.backgroundColor = 'red';
+         quadrado.textContent = 'clicou';
+        
+    });
+    </script>
+    
+</body>
+</html>

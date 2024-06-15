@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: FLEX;
+    justify-content: left;
+    align-items: center;
+    height: 16vh;
+    background-color: #f0f0f0;
+    MARGIN: 2px;
+
+}
+
+.quadrado{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;user-select: none;
+}
